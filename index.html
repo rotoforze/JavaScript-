@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Alex Bernardos</title>
+    <link rel="shortcut icon" href="src/img/js-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <picture>
+            <source srcset="/src/img/js-logo.png">
+            <source srcset="/src/img/js-logo.png">
+            <img src="/src/img/js-logo.png" alt="JavaScript Logo" class="logo">
+        </picture>
+        <span><a href="https://github.com/rotoforze" target="_blank">Alex </a><i class="bi bi-github"></i></span>
+    </header>
+    <main>
+        <ul class="nav-dots" id="js-dots">
+            <li class="nav-dot"></li>
+            <li class="nav-dot"></li>
+            <li class="nav-dot"></li>
+            <li class="nav-dot"></li>
+            <li class="nav-dot"></li>
+            <li class="nav-dot"></li>
+            <li class="nav-dot"></li>
+            <li class="nav-dot"></li>
+            <li class="nav-dot"></li>
+            <li class="nav-dot"></li>
+            <li class="nav-dot"></li>
+            <li class="nav-dot"></li>
+            <li class="nav-dot"></li>
+            <li class="nav-dot"></li>
+            <li class="nav-dot"></li>
+        </ul>
+
+        <div class="main">
+            <section class="section">
+                <h2 class="section__heading">¿Qué es <b>JavaScript</b>?</h2><br>
+                <p class="section__text"><b>JavaScript</b> es un lenguaje de programación 
+                    interpretado, orientado a objetos y basado en eventos.<br> 
+                    Es uno de los lenguajes más populares y ampliamente utilizados en el desarrollo web.</p>
+                <br>
+                <p class="section__text">Permite a los desarrolladores 
+                    crear interactividad y dinamismo en las páginas web, 
+                    lo que mejora la experiencia del usuario. Se utiliza tanto en el 
+                    lado del cliente (navegador) como en el lado del servidor.</p><br>
+                <p class="section__text">Se define embebido en el documento HTML o como un archivo externos
+                    con la extensión <code>.js</code>. Se ejecuta en el navegador del usuario, lo que permite 
+                    la creación de aplicaciones web interactivas y dinámicas.</p><br>
+                </p>
+            </section>
+            <div class="wave"></div>
+            <section class="section">
+                <h2 class="section__heading">Usos y acciones de JS</h2>
+                <br>
+                <p class="section__text">JavaScript se utiliza para una variedad de tareas, 
+                    incluyendo:</p><br>
+                <ul class="section__list">
+                    <li class="section__list-item"><i>Manipulación del <b>DOM</b>:</i> Permite modificar el contenido y la estructura de una página web.</li>
+                    <li class="section__list-item"><i>Validación de formularios:</i> Se utiliza para validar datos ingresados por el usuario antes de enviarlos al servidor.</li>
+                    <li class="section__list-item"><i>Animaciones:</i> Permite crear animaciones y efectos vi
+                    <li class="section__list-item"><i>Desarrollo de aplicaciones web:</i> Se utiliza en el desarrollo de aplicaciones web modernas, como aplicasuales en las páginas web.</li>
+                    <li class="section__list-item"><i>Interacción con <b>APIs</b>:</i> <b>JavaScript</b> puede comunicarse con servicios web y <b>APIs</b> para obtener datos dinámicamente.</li>ciones de una sola página (<b>SPA</b>).</li>
+                    <li class="section__list-item"><i>Desarrollo del lado del servidor:</i> Con <b>Node.js</b>, JavaScript se puede utilizar para crear aplicaciones del lado del servidor.</li>
+                </ul><br>
+                <p class="section__text">En resumen, <b>JavaScript</b> es un lenguaje versátil que permite a los desarrolladores crear experiencias web interactivas y dinámicas.</p>
+            </section>
+            <div class="wave"></div>
+            <section class="section">
+                <h2 class="section__heading">¿Cómo se ve el código <b>JS</b>?</h2><br>
+                <p class="section__text">El código JavaScript se puede escribir directamente en un archivo HTML utilizando la etiqueta <code>&lt;script&gt;</code> o en un archivo separado con la extensión <code>.js</code>.</p>
+                <br>
+                <p class="section__text">Aquí tenemos un ejemplo de código <b>JavaScript</b> (<I>¡Puedes editarme!</I>):</p>
+                <pre>
+                    <script class="section__code" contenteditable style="display: block;">
+// ¡Esto es la leche!
+console.log("¡Hola, mundo!");
+
+function llamame (nombre) { 
+    return "¡Soy una funcion! Mi nombre es "+nombre;
+
+}
+
+console.log(llamame("Alex")); // ¿Qué devolverá?
+                    </script>
+                </pre>
+            </section>
+            <div class="wave"></div>
+            <section class="section">
+                <h2 class="section__heading">Definición de variables</h2><br>
+                <p class="section__text"><b>JS</b> no es un lenguaje con tipado fuerte. Pero tenemos <b>tres</b>
+                tipos diferentes de declarar variables</p><br>
+                <ul class="section__list">
+                    <li class="section__list-item"><i><b>let</b></i>: Se utiliza para declarar variables que pueden cambiar su valor.</li>
+                    <li class="section__list-item"><i><b>const</b></i>: Se utiliza para declarar variables cuyo valor no puede cambiar una vez inicializado. Es constante.</li>
+                    <li class="section__list-item"><i><b>var</b></i>: Se utiliza para declarar variables, exactamente igual que 
+                            el <i><b>let</b></i>, a diferencia de este <i><b>var</b></i> permite acceder a la variable aunque estemos fuera del bloque donde fue declarada, pero debe 
+                            estar dentro de la misma funcion (Para saber más, mirar <a href="https://www.w3schools.com/js/js_scope.asp" target="_blank">Scope</a> y <i>mirar el ejemplo</i>).</li>
+                </ul>
+                <br>
+                <p class="section__text">Aquí tenemos el ejemplo de las variables en <b>JavaScript</b>:</p>
+                <pre>
+                    <script class="section__code" contenteditable style="display: block;">
+function saludar() {
+
+    var edad = 22; // Variable que puede cambiar
+    const nombre = "Alex"; // Variable constante
+
+    // Dentro de la función, podemos crear otros bloques
+    if (edad === 22) {
+        var ciudad = "Oviedo"; // Variable de bloque
+    }
+
+    // Aquí podemos acceder a la variable "nombre" y "edad"
+    console.log("Soy " + nombre + "! Tengo " + edad + " años.");
+
+    // Aún fuera del bloque, podemos acceder a "ciudad"
+    console.log("Y vivo en " + ciudad + ".");
+
+} 
+
+                    </script>
+                </pre>
+            </section>
+            <div class="wave"></div>
+            <section class="section">
+                <h2 class="section__heading">Vectores y matrices (<i><b>Arrays</b></i>) <b>1</b></h2><br>
+                <p class="section__text">En <b>JavaScript</b>, los vectores y matrices se representan en el mismo tipo de dato: <b>Array</b>. 
+                    Un <b>Array</b> es una colección ordenada de elementos que pueden ser de diferentes tipos.</p><br>
+                <p class="section__text">Aquí tenemos un ejemplo de un <b>Array</b>:</p>
+                <pre>
+                    <script class="section__code" contenteditable style="display: block;">
+let vector0 = [1, 2, 3, 4, 5]; // Array de números
+let vector1 = ["Hola", "mundo"]; // Array de cadenas
+let vector2 = [1, "Hola", true]; // Array mixto
+
+let matriz = [ // Array multidimensional
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+                    </script>
+                </pre>
+                <p class="section__text">Para acceder a los elementos de un <b>Array</b>, se utiliza la notación de corchetes:</p>
+                <pre>
+                    <script class="section__code" contenteditable style="display: block;">
+let primerElemento = vector0[0]; // Accede al primer elemento del vector0
+
+// Accede al elemento en la segunda fila y tercera columna de la matriz
+let elementoMatriz = matriz[1][2]; 
+                    </script>
+                </pre>
+            </section>
+                        <div class="wave"></div>
+            <section class="section">
+                <h2 class="section__heading">Vectores y matrices (<i><b>Arrays</b></i>) <b>2</b></h2><br>
+                <p class="section__text">Además, <b>JavaScript</b> ofrece métodos para manipular <b>Arrays</b>, como <code>push()</code>, <code>pop()</code>, <code>shift()</code>, <code>unshift()</code>, entre otros.</p>
+                <p class="section__text">Aquí tenemos un ejemplo de algunos métodos de <b>Array</b>:</p>
+                <pre>
+                    <script class="section__code" contenteditable style="display: block;">
+let frutas = ["manzana", "banana", "naranja"];
+frutas.push("uva"); // Agrega "uva" al final del array
+frutas.pop(); // Elimina el último elemento del array
+frutas.shift(); // Elimina el primer elemento del array
+frutas.unshift("kiwi"); // Agrega "kiwi" al principio del array
+console.log(frutas); // ["kiwi", "banana", "naranja"]
+                    </script>
+                </pre>
+                <p class="section__text">En resumen, los <b>Arrays</b> son una parte fundamental de <b>JavaScript</b> y se utilizan para almacenar y manipular colecciones de datos.</p>
+            </section>
+            <div class="wave"></div>
+            <section class="section">
+                <h2 class="section__heading">Flujo de control  <b>1</b></h2><br>
+                <p class="section__text">El flujo de control en <b>JavaScript</b> se refiere a la forma en que se ejecutan las instrucciones en un programa. 
+                    Esto incluye estructuras de control como condicionales y bucles.</p><br>
+                <p class="section__text">Aquí tenemos un ejemplo de un condicional:</p>
+                <pre>
+                    <script class="section__code" contenteditable style="display: block;">
+let edad = 18;
+if (edad >= 18) { // si la condición es verdadera
+    // Se ejecuta este bloque de código
+    console.log("Eres mayor de edad.");
+} else { // si la condición es falsa
+    console.log("Eres menor de edad.");
+}
+
+// También podemos usar switch para múltiples condiciones
+let numero = 2;
+switch (numero) {
+    case 1:
+        console.log("Uno");
+        break;
+        //...
+    default:
+        console.log("Número no reconocido");
+        break;
+}
+
+// También podemos usar el operador ternario
+let resultado = (edad >= 18) ? "Eres mayor de edad." : "Eres menor de edad.";
+console.log(resultado);
+                    </script>
+                </pre>
+            </section>
+            <div class="wave"></div>
+            <section class="section">
+                <h2 class="section__heading">Flujo de control <b>2</b></h2><br>
+                <p class="section__text">Los bucles se utilizan para repetir un bloque de código varias veces. 
+                    Los bucles más comunes en <b>JavaScript</b> son <code>for</code>, <code>while</code> y <code>do...while</code>.</p><br>
+                <p class="section__text">Y aquí tenemos un ejemplo de un bucle:</p>
+                <pre>
+                    <script class="section__code" contenteditable style="display: block;">
+for (let i = 0; i < 5; i++) { // Se ejecuta 5 veces
+    console.log("Voy por la " + i + " iteración.");
+}
+
+let i = 0;
+while (i < 5) { // Se ejecuta mientras la condición sea verdadera
+    console.log("Número: " + i);
+    i++;
+}
+
+let j = 0;
+do {
+    console.log("Número: " + j);
+    j++;
+} while (j < 5); // Se ejecuta al menos una vez, incluso si la condición es falsa
+                    </script>
+                </pre>
+                <p class="section__text">En resumen, el flujo de control en <b>JavaScript</b> permite tomar decisiones y repetir acciones en función de condiciones específicas.</p>
+            </section>
+            <div class="wave"></div>
+            <section class="section">
+                <h2 class="section__heading">Flujo de control <b>3</b></h2><br>
+                <p class="section__text">Además <b>JS</b> tiene bucles que permiten itinerar sobre arrays o objetos.</p>
+                <p class="section__text">Aquí tenemos un ejemplo de bucles que permiten iterar sobre arrays y objetos:</p>
+                <pre>
+                    <script class="section__code" contenteditable style="display: block;">
+// También podemos usar el bucle for...of para iterar sobre arrays
+let vegetales = ["lechuga", "tomate", "pepino"];
+for (let vegetal of vegetales) {
+    console.log(vegetal); // Imprime cada fruta en el array
+}
+
+// O el bucle for...in para iterar sobre propiedades de un objeto
+let persona = { nombre: "Alex", edad: 22 };
+for (let propiedad in persona) {
+    // Imprime cada propiedad y su valor
+    console.log(propiedad + ": " + persona[propiedad]); 
+}
+
+// También podemos usar el bucle forEach para iterar sobre arrays
+vegetales.forEach(function(vegetal) {
+    console.log(vegetal); // Imprime cada fruta en el array
+});
+                    </script>
+                </pre>
+            </section>
+            <div class="wave"></div>
+            <section class="section">
+                <h2 class="section__heading">Transferencia de control <b>1</b></h2><br>
+                <p class="section__text">La transferencia de control en <b>JavaScript</b> se refiere a la forma en que se puede cambiar el flujo de ejecución de un programa. 
+                    Esto incluye instrucciones como <code>break</code>, <code>continue</code>, <code>return</code>, y <code>throw</code>.</p><br>
+                <p class="section__text">Aquí tenemos un ejemplo de transferencia de control:</p>
+                <pre>
+                    <script class="section__code" contenteditable style="display: block;">
+// break: Termina el bucle o switch
+for (let i = 0; i < 5; i++) {
+    if (i === 3) {
+        break; // Termina el bucle cuando i es 3
+    }
+    console.log(i);
+}
+// continue: Salta a la siguiente iteración del bucle
+for (let i = 0; i < 5; i++) {
+    if (i === 3) {
+        continue; // Salta la iteración cuando i es 3
+    }
+    console.log(i); 
+}
+// return: Devuelve un valor de una función
+function sumar(a, b) {
+    return a + b; // Devuelve la suma de a y b
+}
+let resultadoSuma = sumar(2, 3); // Llama a la función y almacena el resultado
+console.log(resultadoSuma); // Imprime 5
+                    </script>
+                </pre>
+                <p class="section__text">En resumen, la transferencia de control en <b>JavaScript</b> permite cambiar el flujo de ejecución del programa según sea necesario.</p>
+            </section>
+            <div class="wave"></div>
+            <section class="section">
+                <h2 class="section__heading">Transferencia de control <b>2</b></h2><br>
+                <p class="section__text">La transferencia de control en <b>JavaScript</b> se refiere a la forma en que se puede cambiar el flujo de ejecución de un programa. 
+                    Esto incluye instrucciones como <code>break</code>, <code>continue</code>, <code>return</code>, y <code>throw</code>.</p><br>
+                <p class="section__text">Aquí tenemos un ejemplo de transferencia de control:</p>
+                <pre>
+                    <script class="section__code" contenteditable style="display: block;">
+// throw: Lanza una excepción
+function dividir(a, b) {
+    if (b === 0) {
+        throw new Error("No se puede dividir por cero"); // Lanza un error si b es 0
+    }
+    return a / b; // Devuelve el resultado de la división
+}
+try {
+    let resultadoDivision = dividir(10, 0); // Llama a la función
+    console.log(resultadoDivision); // Imprime el resultado
+} catch (error) {
+    console.error(error.message); // Maneja el error
+}
+                    </script>
+                </pre>
+                <p class="section__text">En resumen, la transferencia de control en <b>JavaScript</b> permite cambiar el flujo de ejecución del programa según sea necesario.</p>
+            </section>
+            <div class="wave"></div>
+            <section class="section">
+                <h2 class="section__heading">Funciones <b>1</b></h2><br>
+                <p class="section__text">Las funciones son bloques de código reutilizables que realizan una tarea específica. 
+                    Se pueden definir utilizando la palabra clave <code>function</code>.</p><br>
+                <p class="section__text">Aquí tenemos un ejemplo de una función:</p>
+                <pre>
+                    <script class="section__code" contenteditable style="display: block;">
+function saludar(nombre) {
+    console.log("Hola, " + nombre + "!"); // Imprime un saludo
+}
+// Llamar a la función
+saludar("Alex"); // Llama a la función con el argumento "Alex"
+
+// Funciones anónimas
+let sumador = function(a, b) {
+    return a + b; // Devuelve la suma de a y b
+};
+let resultadoFinal = sumador(2, 3); // Llama a la función y almacena el resultado
+console.log(resultadoFinal); // Imprime 5
+
+// Funciones de flecha
+let multiplicar = (a, b) => a * b; // Función de flecha
+let resultadoMultiplicacion = multiplicar(2, 3); // Llama a la función y almacena el resultado  
+console.log(resultadoMultiplicacion); // Imprime 6
+                    </script>
+                </pre>
+                <p class="section__text">En resumen, las funciones son una parte fundamental de <b>JavaScript</b> y permiten organizar y reutilizar el código de manera eficiente.</p>
+            </section>
+            <div class="wave"></div>
+            <section class="section">
+                <h2 class="section__heading">Funciones <b>2</b></h2><br>
+                <pre>
+                    <script class="section__code" contenteditable style="display: block;">
+// Funciones de orden superior
+function aplicarOperacion(operacion, a, b) {
+    return operacion(a, b); // Aplica la operación a y b
+}
+let resultadoTrasOperar = aplicarOperacion(sumador, 2, 3); // Llama a la función y almacena el resultado
+console.log(resultadoTrasOperar); // Imprime 5
+
+// Funciones recursivas
+function factorial(n) {
+    if (n === 0) {
+        return 1; // Caso base
+    }
+    return n * factorial(n - 1); // Llama a la función recursivamente
+}
+let resultadoFactorial = factorial(5); // Llama a la función y almacena el resultado
+console.log(resultadoFactorial); // Imprime 120
+
+// Funciones con parámetros por defecto
+function saludarConNombre(nombre = "desconocido") {
+    console.log("Hola, " + nombre + "!"); // Imprime un saludo
+}
+// Llamar a la función sin pasar un argumento
+saludarConNombre(); // Llama a la función sin pasar un argumento
+
+                    </script>
+                </pre>
+            </section>
+            <div class="wave"></div>
+            <section class="section">
+                <h2 class="section__heading">Funciones <b>3</b></h2><br>
+                <pre>
+                    <script class="section__code" contenteditable style="display: block;">
+// Funciones con parámetros rest
+function sumarTodo(...numeros) {
+    let suma = 0; // Inicializa la suma
+    for (let numero of numeros) {
+        suma += numero; // Suma cada número al total
+    }
+    return suma; // Devuelve la suma total
+}
+let resultadoSumaTodo = sumarTodo(1, 2, 3, 4, 5); // Llama a la función y almacena el resultado
+console.log(resultadoSumaTodo); // Imprime 15
+
+// Funciones generadoras
+function* generador() {
+    yield 1; // Devuelve 1
+    yield 2; // Devuelve 2
+    yield 3; // Devuelve 3
+}
+
+let generadorInstancia = generador(); // Crea una instancia del generador
+console.log(generadorInstancia.next().value); // Imprime 1
+console.log(generadorInstancia.next().value); // Imprime 2
+console.log(generadorInstancia.next().value); // Imprime 3
+                    </script>
+                </pre>
+            </section>
+        </div>
+                    <div class="wave"></div>
+            <section class="section">
+                <h2 class="section__heading"><b>Gracias</b></h2><br>
+                <pre>
+                    <script class="section__code" contenteditable style="display: block;">
+function graciasPorLeer(visitante) {
+    // Imprime un mensaje de agradecimiento
+    return "Gracias por leer mi página, " + visitante + "!";
+}
+
+// Imprimir un mensaje de despedida
+console.log("¡Espero que hayas aprendido algo nuevo! Y "+graciasPorLeer("Lector")); 
+                    </script>
+                </pre>
+            </section>
+        </div>
+
+        <footer>
+            <p>JavaScript - <a href="https://github.com/rotoforze" target="_blank">Alex</a></p>
+            <p>2025</p>
+        </footer>
+    </main>
+</body>
+<script type="module" src="/src/js/main.js"></script>
+</html>
